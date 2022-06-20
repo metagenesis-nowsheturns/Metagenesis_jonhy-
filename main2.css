@@ -1,92 +1,134 @@
 @font-face {
     font-family:'boogy_brut_poster_testwhite';
     src: url('boogybrutpostertest-white-webfont.woff2') format('woff2'),
-         url('boogybrutpostertest-white-webfont.woff') format('woff');
+    url('boogybrutpostertest-white-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
+
 @font-face {
     font-family: 'Neue Haas Grotesk Display Pro';
     src: url('NeueHaasDisplay-Roman.woff2') format('woff2'),
-        url('NeueHaasDisplay-Roman.woff') format('woff');
-    font-weight: 500;
+    url('NeueHaasDisplay-Roman.woff') format('woff');
+    font-weight: normal;
     font-style: normal;
 }
 
-* { 
-    margin: 0; 
-    padding: 0; 
-    box-sizing:border-box; 
-}
 
-body {
+body { 
+    background-color:black;
+    width: 100%;
+    height: auto;
+    min-width: 60%;
+    margin: 0%;
+    display: flex;
+    position: relative;
+    flex-direction:column;
     overflow-x: hidden;
 }
 
-
-#my-video {
-    height: 100vh;
-    width: 100vw;
-    object-fit: cover;
-    position: fixed;
-    z-index: 0;
+.imgbg{
+ z-index: -99;
+vertical-align: middle;
+position:absolute;
+overflow: scroll;
 }
 
-#ibackground {
+
+.header {
+  width: 100%;
+  height: 40px;
+z-index: 3;
+position: fixed;
+
+}
+
+.container-1 {
+ width: 100%;
+ margin-top: 1%;
+ margin-bottom: 1%;
+ text-align: center;
+
+}
+
+
+.header a.logo {
+    position: relative;
+    font-size: 25px;
     width: 100%;
-    height: 50%;
-    z-index: 1;
-}
-
-#main-container {
-    height: 200vh;
-    width: 100vw;
-    /*background-color: aqua;*/
-    display: flex;
-    flex-direction: column;
-    z-index: 1;
-}
-
-#second-section {
-    width: 100%;
-    height: 50%;
-    z-index: 1;
-    display: flex;
-    flex-direction: column;
-    font-family:'boogy_brut_poster_testwhite';
-    letter-spacing: 2px;
-    text-transform: uppercase;
     color: #FFFFFF;
+    margin-left: 2.5%;
+    letter-spacing: 2px;
+    text-transform: uppercase; 
+    font-family: 'boogy_brut_poster_testwhite';
+    text-decoration: none;
+    z-index: 10;
 }
 
-#text-01 {
+
+#button{
     width: 100%;
-    height: 90%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    position:relative;
+    float: right;
+    width: 18px;
+    height: auto;
+    padding-right: 0.7%;
+    z-index: 1;
 }
 
-#room {
-    font-size: 30px; 
+
+.second-container{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    flex-direction:column;
+    display: flex;
+    justify-items: center;
+    position: fixed;
+    margin-top: 40px;
+   justify-content: center;
+    position: fixed;
+
     
 }
 
-#tagline {
-    font-size: 18px;
+
+h1{ 
+    text-transform: uppercase;
+    height: auto;
+    font-family:'boogy_brut_poster_testwhite';
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 65px; 
+    font-weight: normal;
+    letter-spacing: 3px;
+    padding: 0%;
+    margin: 0%;
 }
 
-#text-02 {
-    width: 100%;
-    height: 10%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+h1 a:any-link {
+    text-decoration: none;
+    color: #FFFFFF;
 }
 
-.footer {
-    font-size: 14px;
+h1 a:hover {
+    text-decoration: none;
+    opacity: 0.7;}
+
+p1 {
+font-family: 'Neue Haas Grotesk Display Pro';
+font-weight: normal;
+font-size: 12px;
+text-align:justify;
+text-align-last: center;
+color: #FFFFFF;
+margin-bottom: 1.5%;
+text-transform: uppercase;
+letter-spacing: 0.3px;
+word-spacing: 0.3px;
 }
+
+
+
+         

@@ -1,0 +1,134 @@
+@font-face {
+    font-family:'boogy_brut_poster_testwhite';
+    src: url('boogybrutpostertest-white-webfont.woff2') format('woff2'),
+    url('boogybrutpostertest-white-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Neue Haas Grotesk Display Pro';
+    src: url('NeueHaasDisplay-Roman.woff2') format('woff2'),
+    url('NeueHaasDisplay-Roman.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body { 
+    background-color:black;
+    width: 100%;
+    height: auto;
+    min-width: 60%;
+    margin: 0%;
+    display: flex;
+    position: relative;
+    flex-direction:column;
+    overflow-x: hidden;
+}
+
+.imgbg{
+ z-index: -99;
+vertical-align: middle;
+position:absolute;
+overflow: scroll;
+}
+
+
+.header {
+  width: 100%;
+  height: 40px;
+z-index: 3;
+position: fixed;
+
+}
+
+.container-1 {
+ width: 100%;
+ margin-top: 1%;
+ margin-bottom: 1%;
+ text-align: center;
+
+}
+
+
+.header a.logo {
+    padding-left: 54px;
+    position: relative;
+    font-size: 25px;
+    width: 100%;
+    color: #FFFFFF;
+    letter-spacing: 2px;
+    text-transform: uppercase; 
+    font-family: 'boogy_brut_poster_testwhite';
+    text-decoration: none;
+    z-index: 3;
+}
+
+
+#button{
+    width: 100%;
+    position:relative;
+    float: right;
+    width: 18px;
+    height: auto;
+    padding-right: 15px;
+    z-index: 1;
+}
+
+
+.second-container{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    flex-direction:column;
+    display: flex;
+    justify-items: center;
+    position: fixed;
+    margin-top: 40px;
+   justify-content: center;
+    position: fixed;
+
+    
+}
+
+
+h1{ 
+    text-transform: uppercase;
+    height: auto;
+    font-family:'boogy_brut_poster_testwhite';
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 65px; 
+    font-weight: normal;
+    letter-spacing: 3px;
+    padding: 0%;
+    margin: 0%;
+}
+
+h1 a:any-link {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+h1 a:hover {
+    text-decoration: none;
+    opacity: 0.7;}
+
+p1 {
+font-family: 'Neue Haas Grotesk Display Pro';
+font-weight: normal;
+font-size: 12px;
+text-align:justify;
+text-align-last: center;
+color: #FFFFFF;
+margin-bottom: 1.5%;
+text-transform: uppercase;
+letter-spacing: 0.3px;
+word-spacing: 0.3px;
+}
+
+
+
+         
